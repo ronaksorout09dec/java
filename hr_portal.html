@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Portal</title>
+    <link rel="icon" href="https://logowik.com/content/uploads/images/wipro4247.logowik.com.webp">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(216, 31, 253, 0.801);
+        }
+        header,footer{
+            background-color: darkmagenta;
+            color: antiquewhite;
+            text-align: center;
+            padding: 2px;
+        }
+        .navitem{
+                display: inline;
+                padding: 20px;
+        }
+        .navitem a {
+            text-decoration: none;
+            color: rgb(226, 240, 253);
+        }
+        .registerform {
+            margin-left: auto;
+            margin-right: auto;
+            width: max-content;
+        }
+        .employeetable {
+            text-align: center;
+        }
+        table{
+            margin-right: auto;
+            margin-left: auto;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th , td {
+            border: 1px solid  darkmagenta;
+            padding: 8px;
+        }
+
+        .contactus {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+        <header>
+            <h1>Welcome to Company HR Portal</h1>
+            <nav>
+                <ul>
+                    <li class="navitem"> <a href="#employee-registration">Employee Registration</a></li>
+                    <li class="navitem"> <a href="#employee-directory">Employee Directory</a></li>
+                    <li class="navitem"> <a href="#contact-us">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <img src="https://www.shutterstock.com/image-photo/happy-diverse-different-aged-business-260nw-2012728106.jpg" style="width: 100%;" alt="img">
+
+        <section id="employee-registration" class="registerform">
+            <h2>Employee Registration</h2>
+            <p>Please fill the below form to register as <em>Employee.</em> </p><br>
+            <form action="/action">
+                <label for="name">Enter your Name:</label>
+                <input type="text" name="name" id="name" required><br><br>
+                <label for="email">Enter your Email i'd:</label>
+                <input type="email" name="email" id="email" required><br><br>
+                <label for="password">Enter the Password:</label>
+                <input type="password" name="password" id="password" required><br><br>
+                <label for="age">Enter the age:</label>
+                <input type="number" name="age" id="age" required><br><br>
+                <label for="a">I'm over 18+</label>
+                <input type="checkbox" name="a" id="a"><br><br>
+                <label for="role">Select Role:</label>
+                <select name="role" id="role">
+                    <option>Select your Role</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Project Manager">Project Manager</option>
+                    <option value="Designer">Designer</option>
+                    <option value="HR Representative">HR Representative</option>
+                </select><br><br>
+                <label for="date">Select the Joining Date :</label>
+                <input type="date" name="date" id="date"><br><br>
+                <input type="submit"><br><br>
+            </form>
+        </section>
+
+        <section id="employee-directory" class="employeetable">
+            <h2>Employee Directory</h2>
+            <p>List of all Registered <em>Emplyee.</em></p>
+            <table>
+                <tr>
+                    <th>Emplyee ID</th>
+                    <th>Emplyee Name</th>
+                    <th>Emplyee Role</th>
+                </tr>
+                <tr>
+                    <td>110</td>
+                    <td>Jai dixit</td>
+                    <td>Project Manager</td>
+                </tr>
+                <tr>
+                    <td>111</td>
+                    <td>Ramesh kumar</td>
+                    <td>Software Engineer</td>
+                </tr>
+                <tr>
+                    <td>112</td>
+                    <td>Anil kumar</td>
+                    <td>Designer</td>
+                <tr>
+                    <td>113</td>
+                    <td>Suresh kumar</td>
+                    <td>HR Representative</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact-us" class="contactus">
+            <h2>Contact Us</h2>
+            <p>You can contact us at email i'd ~ company@official.com or contact No. <b>9843523448</b></p>
+            <p>You can also visit the office between <b><u>9:00 AM to 6:00 Pm</u></b></p>
+            <p>You can take the help of the google map to visit at the office loaction given below &darr; </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d449155.5940617421!2d76.46125497343752!3d28.418409599999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d229e95c38793%3A0xbb0ed2b6cfc78e93!2sWipro!5e0!3m2!1sen!2sin!4v1723393994031!5m2!1sen!2sin" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <footer>
+            <p>&copy; 1945 , Wipro</p>
+        </footer>
+</body>
+</html>
