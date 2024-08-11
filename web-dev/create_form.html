@@ -9,19 +9,57 @@
     <form action="/action">
         <div>
             <label for="Username">Enter your Username :</label>
-            <input type="text" id="Username" placeholder="Enter username">
+            <input type="text" id="Username" placeholder="Enter username" name="Username">
         </div>
         <div>
             <label for="Password">Enter your Password :</label>
-            <input type="Password" id="Password" placeholder="Enter your password">
+            <input type="Password" id="Password" placeholder="Enter your password" name="Password">
         </div>
         <div>
             <label for="Age">Enter your Age :</label>
             <input type="Number" id="Age" placeholder="Enter your Age">
         </div>  
+        <div>
+            <input type="checkbox" id="age" name="age">
+            <label for="age">I am 18+</label>
+            <input type="checkbox" id="age" name="age">
+            <label for="age">I am under 18 age of grp's</label>
+        </div>
+        <div>
+            <input type="radio" name="fruit" id="Apple">
+            <label for="Apple">Apple</label>
+            <input type="radio" name="fruit" id="Mango">
+            <label for="Apple">Mango</label>
+            <input type="radio" name="fruit" id="Banana">
+            <label for="Banana">Banana</label>
+        </div>
+        <div>
+            Choose your profession
+            <select name="profession" id="profession">
+                <option>Select your profession</option>
+                <option value="Stud">Student</option>
+                <option value="Dev">Developer</option>
+            </select> 
+        </div>
+        <div>
+            <label for="Feedback">Please Provide your Feedback</label>
+            <textarea name="feed" id="feedback" placeholder="Write your feedback" ></textarea>
+        </div>
         <button>Submit</button> 
         <button type="button">Hello</button>
         <button type="reset">Reset</button>
+        <div>
+            <label for="vol">Select your volume Range</label>
+            <input type="range" id="vol" name="vol" min="0" max="100" value="50" step="25">
+        </div>
+        
+    </form> 
+
+    <br><hr><br>
+
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query" placeholder="Search on youtube">
+        <button>Submit</button>
     </form>
 </body>
 </html>
