@@ -10,14 +10,23 @@
     <form action="/server">
         <input type="text" name="First_name" placeholder="First Name">
         <input type="text" name="Last_name" placeholder="Last Name">
-<div>
-    <label for="gender">Please Select Gender</label>
-        <select name="Gender" id="Gen">
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="Other">other</option>
-        </select>
-</div>
+    <div>
+        <label for="gender">Please Select Gender</label>
+            <select name="Gender" id="Gen" required>
+                <option value="">Choose your Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">other</option>
+            </select>
+    </div>
+    <div>
+        <label for="DOB">Enter your DOB :</label>
+        <input type="date" id="DOB" name="DOB">
+    </div>
+
+    <div>
+        <label for="Document">Choose your document</label>
+        <input type="file" value="file" id="file">
     <div>
         Do you agree to all terms of service ?
         <input type="checkbox" id="terms" name="terms" checked> 
