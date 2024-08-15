@@ -1,5 +1,3 @@
-
-
 class Bank {
     int getBalance() {
         return 0;

@@ -1,17 +1,24 @@
+import java.util.Scanner;
 
-import java.util.*;
+class factorialFind {
+    public static int factorialFinding(int n) {
+        int result = 1;
+        if (n == 0 || n == 1) {
+            return 1;
+        } else {
+            result = n * factorialFinding(n - 1);
+        }
+        return result;
+    }
 
-public class factorial {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter the Number for which you want factorial : ");
         int n = scan.nextInt();
-        scan.close();
 
-        int factorial = 1;
-        for (int i = 1; i <= n; i++) {
-            factorial *= i;
-        }
-        System.out.println("Factorial of the number is : "+ factorial);
+        int result = factorialFinding(n);
+        System.out.println("Factorial of " + n + " is : " + result);
+
+        scan.close();
     }
 }
