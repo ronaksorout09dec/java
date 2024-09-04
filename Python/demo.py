@@ -1,10 +1,13 @@
-import pandas as pd 
-import matplotlib.pyplot as plt
+def reverse(s):
+    str = ""
+    for i in s:
+        str = i + str
+    return str
 
-Data = {
-    'Month' : ['Jan','Feb','Mar','Apr','May','June'],
-    'Sales' : ['1520','1800','1700','1600','1500','2100'],
-    }
+s = "Geeksforgeeks"
 
-df = pd.DataFrame(Data)
-print("Sales Data: \n",df)
+print("The original string is : ", end="")
+print(s)
+
+print("The reversed string (using loops) is : ", end="")
+print(reverse(s))
