@@ -15,8 +15,8 @@ public class BinarySearchX {
         int[] arr = {2,4,8,12,16,19,21,27,29,35};
         int low = 0; 
         int high = arr.length-1;
-        int x = 27;
+        int x = 29;
         int result = binarySearch1(arr,low,high,x);
-        System.out.println("The element is at position :" + result);
+        System.out.println("The element is at index :" + result);
     }
 }
