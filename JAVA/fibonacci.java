@@ -16,5 +16,6 @@ public class fibonacci {
         int n = sc.nextInt();
         int result = fibonacciSeries(n);
         System.out.println("The final Output is :" + result);
+    sc.close();
     }
 }
