@@ -1,42 +1,39 @@
+import random
 import time
 import matplotlib.pyplot as plt
-import random
 
 def quick_sort(arr):
     if len(arr) <= 1:
         return arr
+    else:
+        pivot = arr[len(arr) // 2]
+        left = [x for x in arr if x < pivot]
+        middle = [x for x in arr if x == pivot]
+        right = [x for x in arr if x > pivot]
+        return quick_sort(left) + middle + quick_sort(right)
 
-    pivot = arr[len(arr) // 2]
-    left = [x for x in arr if x < pivot]
-    middle = [x for x in arr if x == pivot]
-    right = [x for x in arr if x > pivot]
+def measure_time_for_nnn(nnn_values, num_trials=5):
+    times = []
+    for nnn in nnn_values:
+        total_time = 0
+        for _ in range(num_trials):
+            arr = [random.randint(0, 100000) for _ in range(nnn)]
+            start_time = time.time()
+            quick_sort(arr)
+            end_time = time.time()
+            total_time += (end_time - start_time)
+        average_time = total_time / num_trials
+        times.append(average_time)
+    return times
 
-    return quick_sort(left) + middle + quick_sort(right)
+nnn_values = [100,200,300,400,500]
 
-def analyze_quick_sort(n):
-    arr = [i for i in range(n)]
-    random.shuffle(arr)
+times_for_nnn = measure_time_for_nnn(nnn_values)
 
-    start_time = time.time()
-    sorted_arr = quick_sort(arr)
-    end_time = time.time()
-
-    execution_time = end_time - start_time
-    return execution_time
-
-def plot_time_complexity(n_values):
-    execution_times = []
-
-    for n in n_values:
-        execution_time = analyze_quick_sort(n)
-        execution_times.append(execution_time)
-
-    plt.plot(n_values, execution_times, label="Quick Sort")
-    plt.xlabel("Number of Elements")
-    plt.ylabel("Execution Time (seconds)")
-    plt.title("Time Complexity of Quick Sort")
-    plt.legend()
-    plt.show()
-
-n_values = [100, 200, 300, 400, 500]
-plot_time_complexity(n_values)
+plt.figure(figsize=(10, 6))
+plt.plot(nnn_values, times_for_nnn, marker='o', color='b')
+plt.title('Time Complexity of Quick Sort for Different nnn Values')
+plt.xlabel('Number of elements (nnn)')
+plt.ylabel('Average Time taken (seconds)')
+plt.grid(True)
+plt.show()

@@ -1,14 +1,10 @@
 import numpy as np
 import pandas as pd
 
-# Load the data from the Excel file
 data = pd.read_excel('House_Rates.xls')
 
-# Extract the house_size attribute
-# house_sizes = data['sqft_lot']
 house_sizes = data['sqft_living']
 
-# Calculate the five-number summary
 min_size = np.min(house_sizes)
 Q1_size = np.percentile(house_sizes, 25)
 median_size = np.median(house_sizes)
