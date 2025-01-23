@@ -1,0 +1,105 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ExpenseManagerCLI",
+            "request": "launch",
+            "mainClass": "com.expensemanager.ExpenseManagerCLI",
+            "projectName": "java_8e6c088c"
+        },
+        {
+            "type": "java",
+            "name": "ExpenseManagerCLI",
+            "request": "launch",
+            "mainClass": "ExpenseManagerCLI",
+            "projectName": "java_8e6c088c"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "java_8e6c088c"
+        },
+        {
+            "type": "java",
+            "name": "calculator",
+            "request": "launch",
+            "mainClass": "INTERN.calculator",
+            "projectName": "java_8e6c088c"
+        },
+        {
+            "type": "java",
+            "name": "EnhancedCalculatorApp",
+            "request": "launch",
+            "mainClass": "EnhancedCalculatorApp",
+            "projectName": "java_8e6c088c"
+        },
+        {
+            "type": "java",
+            "name": "WeatherApp",
+            "request": "launch",
+            "mainClass": "WeatherApp",
+            "projectName": "java_8e6c088c"
+        },
+        {
+            "type": "java",
+            "name": "E_Commerce_platform",
+            "request": "launch",
+            "mainClass": "INTERN.E_Commerce_platform",
+            "projectName": "java_8e6c088c"
+        },
+        {
+            "type": "java",
+            "name": "Banking_App",
+            "request": "launch",
+            "mainClass": "INTERN.Banking_App",
+            "projectName": "java_8e6c088c"
+        },
+        {
+            "type": "java",
+            "name": "ChatClient",
+            "request": "launch",
+            "mainClass": "INTERN.ChatClient",
+            "projectName": "java_8e6c088c"
+        },
+        {
+            "type": "java",
+            "name": "ChatServer",
+            "request": "launch",
+            "mainClass": "INTERN.ChatServer",
+            "projectName": "java_8e6c088c"
+        },
+        {
+            "type": "java",
+            "name": "Suduko_Solver",
+            "request": "launch",
+            "mainClass": "INTERN.Suduko_Solver",
+            "projectName": "java_8e6c088c"
+        },
+        {
+            "type": "java",
+            "name": "Weather_App",
+            "request": "launch",
+            "mainClass": "INTERN.Weather_App",
+            "projectName": "java_8e6c088c"
+        },
+        {
+            "type": "java",
+            "name": "To_Do_Application",
+            "request": "launch",
+            "mainClass": "INTERN.To_Do_Application",
+            "projectName": "java_8e6c088c"
+        },
+        {
+            "type": "java",
+            "name": "Launch SimpleToDoListApplication",
+            "request": "launch",
+            "mainClass": "INTERN.Simple_To_Do_List_Application",
+            "classPaths": [
+                "lib/*"
+            ]
+        }
+    ]
+}
